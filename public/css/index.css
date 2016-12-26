@@ -1,3 +1,70 @@
-h1{
-	color: red;
+body { 
+    padding-top: 43px; 
 }
+
+@font-face{
+	font-family: 'Dense';
+	src: 
+	local('Dense'),
+	local('Dense-Regular'),
+	url('fonts/Dense-Regular.otf') 
+	format('opentype');
+}
+
+
+.navbar-default{
+	background-color: white	;
+	border: none;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-nav {
+    float: left;
+    margin: 7.5px -15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: Dense;
+    font-size: 24px;
+    color: #777;
+}
+
+.container-fluid{
+	width: 80%;
+}
+
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 36px;
+    vertical-align: top;
+    font-family: Dense; 
+    font-weight: bold;
+}
+
+
+.firstPage{
+	background-color: blue;
+	height: 100%;
+	display: flex;
+}
+
+.secondPage{
+	background-color: yellow;
+	height: 100%;
+	display: flex;
+}
+
+.thirdPage{
+	background-color: green;
+	height: 100%;
+	display: flex;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:15px !important; 
+    padding-bottom:10px !important;
+    height: 40px;
+}
+.navbar {min-height:28px !important;}
+
