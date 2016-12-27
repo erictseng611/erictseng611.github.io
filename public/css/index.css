@@ -43,19 +43,19 @@ body {
 }
 
 
-.firstPage{
+.about{
 	background-color: blue;
 	height: 100%;
 	display: flex;
 }
 
-.secondPage{
+.projects{
 	background-color: yellow;
 	height: 100%;
 	display: flex;
 }
 
-.thirdPage{
+.contact{
 	background-color: green;
 	height: 100%;
 	display: flex;
