@@ -43,19 +43,19 @@ body {
 }
 
 
-.about{
+#about{
 	background-color: blue;
 	height: 100%;
 	display: flex;
 }
 
-.projects{
+#projects{
 	background-color: yellow;
 	height: 100%;
 	display: flex;
 }
 
-.contact{
+#contact{
 	background-color: green;
 	height: 100%;
 	display: flex;
