@@ -1,4 +1,4 @@
-console.log('js connected');
+console.log('js1');
 
 $(document.getElementById('scrollToAbout')).click(function() {
      $('html, body').animate({
