@@ -1,4 +1,4 @@
-console.log('js1');
+console.log('hlelo');
 
 $(document.getElementById('scrollToAbout')).click(function() {
      $('html, body').animate({
