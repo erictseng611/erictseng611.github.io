@@ -11,12 +11,17 @@ body{ height: 100%; }
 	format('opentype');
 }
 
+.fa { display:inline; }
 
 .navbar-default{
 	background-color: white	;
 	border: none;
 	border-radius: 0px;
 	margin-bottom: 0px;
+}
+
+.navbar-toggle {
+	margin-top: 25px;
 }
 
 .navbar-nav {
@@ -29,9 +34,6 @@ body{ height: 100%; }
     font-size: 3em;
     color: #777;
     margin-top: .10em;
-}
-
-.container-fluid{
 }
 
 .navbar-default .navbar-brand {
@@ -49,33 +51,69 @@ body{ height: 100%; }
 	width: auto;
 }
 
-/*#frontpic{
-	height: 100%;
-	width: auto;
-}*/
-
 #about{
-	background-color: blue;
+	background-color: #89C4F4;
 	height: 100%;
 	display: flex;
 }
 
 #projects{
-	background-color: yellow;
+	background-color: #ECF0F1;
 	height: 100%;
 	display: flex;
 }
 
 #contact{
-	background-color: green;
-	height: 100%;
+	background-color: #89C4F4;
+	height: 50%;
 	display: flex;
 }
+
+.row{
+}
+
+.contact p{
+	padding-left: 1em;
+	margin: 0em;
+}
+
+.container .contact{
+	padding-top: 2em;
+}
+
+
+.col-md-5{
+	font-size: 18px;
+}
+
+.bottomBar{
+	background-color: #282c37;
+	height: 15%;
+	position: static;
+	overflow: hidden;
+	max-height: 150px;
+}
+
+.containercr{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copyright p{
+	color: white;
+    text-align: center;
+
+}
+
+
 
 .navbar-nav > li > a, .navbar-brand {
     padding-top:.50em !important; 
     padding-bottom:10px !important;
     height: 40px;
+    color: #6C7A89;
+
 }
 .navbar {min-height:5em !important;}
 

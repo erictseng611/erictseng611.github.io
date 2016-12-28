@@ -4,9 +4,11 @@
 
 <title> Portfolio </title>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/19a3a9b6f2.js"></script>
   <link rel="stylesheet" type="text/css" href="./public/css/index.css">
 </head>
 
@@ -17,38 +19,70 @@
   <nav class="navbar navbar-default navbar-fixed-top" id="nav_bar">
     <div class="container-fluid">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
         <a class="navbar-brand" href="#">Eric Tseng</a>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" id="scrollToAbout">About</a></li>
-        <li><a href="#" id ="scrollToProjects">Projects</a></li>
-        <li><a href="#" id="scrollToContact">Contact</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="scrollToAbout">About</a></li>
+          <li><a href="#" id ="scrollToProjects">Projects</a></li>
+          <li><a href="#" id="scrollToContact">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="front" id="front">
+    <img src="public/images/profilepicture.png" id="frontpic">
+  </div>
+
+  <div class="about" id="about">
+    <div class="container">
+      <h1>About</h1>
     </div>
   </div>
-</nav>
 
-<div class="front" id="front">
-  <img src="public/images/profilepicture.png" id="frontpic">
+  <div class="projects" id="projects">
+    <div class="container">
+      <h1>Projects</h1>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="container">
+      <h1>Contact</h1>
+      <div class="container contact">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-1"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+              <div class="col-md-5">Tseng.eric611@gmail.com</div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"><i class="fa fa-github fa-2x" aria-hidden="true"></i></div>
+              <div class="col-md-5"><a class="text-purple" href="https://github.com/erictseng611">github.com/erictseng611</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="about" id="about">
-  <div class="container">
-  <h1>About</h1>
-</div>
-</div>
-
-<div class="projects" id="projects">
-  <h1>Projects</h1>
-</div>
-
-<div class="contact" id="contact">
-  <h1>Contact</h1>
-</div>
-
-<div class="fourthPage">
-
+<div class="bottomBar">
+  <div class="containercr">
+    <div class="copyright">
+      <p> &copy;  Eric Tseng </p>
+    </div>
+  </div>
 </div>
 
 
