@@ -1,14 +1,7 @@
 html{ height: 100%; }
 
-body{ height: 100%; }
-
-@font-face{
-	font-family: 'Dense';
-	src: 
-	local('Dense'),
-	local('Dense-Regular'),
-	url('fonts/Dense-Regular.otf') 
-	format('opentype');
+body{ height: 100%; 
+	font-family: "Open Sans", sans-serif;
 }
 
 .fa { display:inline; }
@@ -30,7 +23,7 @@ body{ height: 100%; }
 }
 
 .navbar-default .navbar-nav>li>a {
-    font-family: Dense;
+    font-family: 'Josefin Slab';
     font-size: 3em;
     color: #777;
     margin-top: .10em;
@@ -40,15 +33,15 @@ body{ height: 100%; }
     color: #777;
     font-size: 4em;
     vertical-align: top;
-    font-family: Dense; 
     font-weight: bold;
+    font-family: 'Josefin Slab';
 }
 
 #front{
 	background-color: white;
 	overflow: hidden;
-	height: 100%;
-	width: auto;
+	height: auto;
+	width: 100%;
 }
 
 #about{
@@ -103,9 +96,7 @@ body{ height: 100%; }
 .copyright p{
 	color: white;
     text-align: center;
-
 }
-
 
 
 .navbar-nav > li > a, .navbar-brand {
