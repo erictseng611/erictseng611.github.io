@@ -28,7 +28,7 @@ body{ height: 100%; }
     font-family: Dense;
     font-size: 3em;
     color: #777;
-    margin-top: .25em;
+    margin-top: .10em;
 }
 
 .container-fluid{
@@ -73,7 +73,7 @@ body{ height: 100%; }
 }
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:.55em !important; 
+    padding-top:.50em !important; 
     padding-bottom:10px !important;
     height: 40px;
 }
