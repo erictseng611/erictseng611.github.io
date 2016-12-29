@@ -1,7 +1,7 @@
 html{ height: 100%; }
 
 body{ height: 100%; 
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
 }
 
 .fa { display:inline; }
@@ -18,23 +18,23 @@ body{ height: 100%;
 }
 
 .navbar-nav {
-    float: left;
-    margin: 7.5px -15px;
+	float: left;
+	margin: 7.5px -15px;
 }
 
 .navbar-default .navbar-nav>li>a {
-    font-family: 'Josefin Slab';
-    font-size: 3em;
-    color: #777;
-    margin-top: .10em;
+	font-family: 'Josefin Slab';
+	font-size: 2.5em;
+	color: #777;
+	margin-top: .20em;
 }
 
 .navbar-default .navbar-brand {
-    color: #777;
-    font-size: 4em;
-    vertical-align: top;
-    font-weight: bold;
-    font-family: 'Josefin Slab';
+	color: #777;
+	font-size: 3.5em;
+	vertical-align: top;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #front{
@@ -47,19 +47,29 @@ body{ height: 100%;
 #about{
 	background-color: #89C4F4;
 	height: 100%;
-	display: flex;
 }
+
+#aboutInfo{
+	width: 50%;
+}
+
 
 #projects{
 	background-color: #ECF0F1;
 	height: 100%;
 	display: flex;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);  
+	-moz-box-shadow:    0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 #contact{
 	background-color: #89C4F4;
 	height: 50%;
 	display: flex;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);  
+	-moz-box-shadow:    0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 0px 10px 5px rgba(0, 0, 0, 0.5);	
 }
 
 .row{
@@ -88,22 +98,22 @@ body{ height: 100%;
 }
 
 .containercr{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .copyright p{
 	color: white;
-    text-align: center;
+	text-align: center;
 }
 
 
 .navbar-nav > li > a, .navbar-brand {
-    padding-top:.50em !important; 
-    padding-bottom:10px !important;
-    height: 40px;
-    color: #6C7A89;
+	padding-top:.50em !important; 
+	padding-bottom:10px !important;
+	height: 40px;
+	color: #6C7A89;
 
 }
 .navbar {min-height:5em !important;}
