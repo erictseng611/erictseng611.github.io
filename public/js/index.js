@@ -17,5 +17,10 @@ $(document.getElementById('scrollToContact')).click(function() {
 $('.nav a').on('click', function(){
     $('.btn-navbar').click(); //bootstrap 2.x
     $('.navbar-toggle').click() //bootstrap 3.x by Richard
+    $(this).closest('li').addClass('current').siblings().removeClass('current')
 });
 
+$('body').scrollspy({
+  target: '#nav_bar',
+  offset: 70
+});
