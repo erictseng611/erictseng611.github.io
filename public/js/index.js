@@ -22,5 +22,5 @@ $('.nav a').on('click', function(){
 
 $('body').scrollspy({
   target: '#nav_bar',
-  offset: 70
+  offset: 71
 });
