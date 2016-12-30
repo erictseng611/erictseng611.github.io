@@ -1,7 +1,7 @@
 html{ height: 100%; }
 
 body{ height: 100%; 
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	min-width: 325px;
 }
 
@@ -34,8 +34,9 @@ body{ height: 100%;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: blue;
-    background-color: transparent;
+	color: #5C97BF;
+	font-weight: bolder;
+	background-color: transparent;
 }
 
 .navbar-nav {
@@ -55,7 +56,7 @@ body{ height: 100%;
 	font-size: 3.5em;
 	vertical-align: top;
 	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -65,7 +66,7 @@ body{ height: 100%;
 	border-color: transparent; 
 }
 
-.front{
+#front{
 	background-color: white;
 	max-height: 98%;
 	height: 98%;
@@ -83,10 +84,19 @@ body{ height: 100%;
 	bottom: 0px;
 	width: 100%;
 	height: 98%;
-	background-image: -webkit-linear-gradient(0deg, black, hsla(0, 0%, 48%, .26) 35%, transparent), url(../images/icicle.png);
-	background-image: linear-gradient(0deg, black, hsla(0, 0%, 48%, .26) 35%, transparent), url(../images/icicle.png);
+	background-image: -webkit-linear-gradient(0deg, black, hsla(0, 0%, 48%, .26) 35%, transparent), url(../images/forestSmall.jpg);
+	background-image: linear-gradient(0deg, black, hsla(0, 0%, 48%, .26) 35%, transparent), url(../images/forestSmall.jpg);
 	background-position: 0px 0px, 50% 50%;
 	background-size: auto, cover;
+}
+
+#downArrow{
+	width: 5%;
+	height: auto;
+	position: absolute;
+	bottom: 2em;
+	display: block;
+	margin: auto;
 }
 
 
