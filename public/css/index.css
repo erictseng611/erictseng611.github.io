@@ -99,6 +99,13 @@ body{ height: 100%;
 	background-image: linear-gradient(0deg, black, hsla(0, 0%, 20%, .25) 20%, transparent), url(../images/forestSmall.jpg);
 	background-position: 0px 0px, 50% 50%;
 	background-size: auto, cover;
+	background-attachment: fixed;
+}
+
+@media (max-width: 760px) {
+	#front{
+		background-attachment: scroll;
+	}
 }
 
 #greeting{
