@@ -100,6 +100,9 @@ body{ height: 100%;
 	background-position: 0px 0px, 50% 50%;
 	background-size: auto, cover;
 	background-attachment: fixed;
+	min-height: 200px;
+	display: table;
+	width: 100%;
 }
 
 @media (max-width: 760px) {
@@ -111,25 +114,53 @@ body{ height: 100%;
 #greeting{
 	color: white;
 	text-align: center;
-	margin-top: 3em;
 	font-size: 5em;
 	text-shadow: 1px 1px 1px #000;
+	margin-top: auto;
+	margin-bottom: bottom;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 
 #downArrow{
-	width: 5%;
 	height: auto;
 	position: absolute;
-	bottom: 3em;
+	bottom: 10%;
 	display: block;
-	margin: auto;
 	min-width: 40px;
+	margin-left: auto;
+	margin-right: auto;
 	left: 0;
 	right: 0;
-	-webkit-animation: fade 4s infinite;
-	animation: fade 4s infinite;
+	max-width: 100px;
 }
+
+
+.btn-circle {
+    width: 70px;
+    height: auto;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: transparent;
+    -webkit-animation: fade 4s infinite;
+    animation: fade 4s infinite;
+}
+
+.btn:hover,
+.btn:focus {
+  color: black;     
+  text-decoration: none;
+  background: white;
+  -webkit-animation: 0;
+  animation: 0;
+  opacity: .7;
+}
+
 
 @-webkit-keyframes fade {
 	0% {
@@ -137,7 +168,7 @@ body{ height: 100%;
 	}
 
 	50% {
-		opacity: 0;
+		opacity: .2;
 	}
 
 	100% {
@@ -151,7 +182,7 @@ body{ height: 100%;
 	}
 
 	50% {
-		opacity: 0;
+		opacity: .2;
 	}
 
 	100% {
@@ -163,9 +194,10 @@ body{ height: 100%;
 #about{
 	background-color: #F2F1EF;
 	height: 95%;
-	display: flex;
-	min-height: 700px;
+	width: 100%;
+	display: inline-block;
 }
+
 
 #aboutInfo{
 	width: 50%;
@@ -178,7 +210,11 @@ body{ height: 100%;
 	margin-top: 2em;
 }
 
-@media (max-width: 760px) {
+#firstAbout{
+	margin-top: 3em;
+}
+
+@media (max-width: 768px) {
 	.mobile-only {
 		display:block !important;
 	}
@@ -190,6 +226,8 @@ body{ height: 100%;
 
 #circlePic{
 	margin: 5em;
+	width: 90%;
+	height: auto;
 
 }
 
@@ -199,7 +237,7 @@ body{ height: 100%;
 
 
 #projects{
-	background-color: #ECF0F1;
+	background-color: blue;
 	height: 100%;
 	display: flex;
 /*	-webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);  
@@ -237,9 +275,11 @@ body{ height: 100%;
 .bottomBar{
 	background-color: #282c37;
 	height: 15%;
-	position: static;
+	position: relative;
 	overflow: hidden;
 	max-height: 150px;
+	bottom: 0;
+	width: 100%;
 }
 
 .containercr{
