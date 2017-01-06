@@ -193,9 +193,7 @@ body{ height: 100%;
 
 #about{
 	background-color: #F2F1EF;
-	height: 95%;
 	width: 100%;
-	display: inline-block;
 }
 
 
@@ -211,7 +209,6 @@ body{ height: 100%;
 }
 
 #firstAbout{
-	margin-top: 3em;
 }
 
 @media (max-width: 768px) {
@@ -225,8 +222,8 @@ body{ height: 100%;
 }
 
 #circlePic{
-	margin: 5em;
-	width: 90%;
+	margin: 4em;
+	width: 80%;
 	height: auto;
 
 }
