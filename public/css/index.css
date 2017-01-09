@@ -44,9 +44,31 @@ body{ height: 100%;
 	box-shadow:         0px 0px 10px 3px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-toggle {
+.navbar-toggle{
 	margin-top: 1.5em;
 }
+
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
 
 @media (min-width: 768px){
 	#bs-example-navbar-collapse-1.collapsing{
@@ -151,8 +173,8 @@ body{ height: 100%;
     animation: fade 4s infinite;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-circle:hover,
+.btn-circle:focus {
   color: black;     
   text-decoration: none;
   background: white;
@@ -192,7 +214,7 @@ body{ height: 100%;
 
 
 #about{
-	background-color: #F2F1EF;
+	background-color: white;
 	width: 100%;
 }
 
@@ -228,13 +250,29 @@ body{ height: 100%;
 
 }
 
+.aboutResume{
+	text-align: center;
+}
+
+.aboutResume a{
+	color: black;
+}
+
+#resumeButton{
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	text-align: center;
+	border: 2px solid black;
+}
+
 .important{
 	font-size: 25px;
 }
 
 
 #projects{
-	background-color: blue;
+	background-color: #3498db;
 	height: 100%;
 	display: flex;
 /*	-webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);  
@@ -243,7 +281,7 @@ body{ height: 100%;
 }
 
 #contact{
-	background-color: #89C4F4;
+	background-color: #ecf0f1;
 	height: 50%;
 	display: flex;
 	min-height: 245px;
