@@ -52,6 +52,7 @@ body{ height: 100%;
 	transform: rotate(45deg);
 	transform-origin: 10% 10%;
 }
+
 .navbar-toggle .middle-bar {
 	opacity: 0;
 }
@@ -67,6 +68,27 @@ body{ height: 100%;
 }
 .navbar-toggle.collapsed .bottom-bar {
 	transform: rotate(0);
+}
+
+@-moz-keyframes spin { 
+	100%{
+		-moz-transform: rotate(45deg);
+		-moz-transform-origin: 10% 10%;
+	}
+}
+
+@-webkit-keyframes spin {
+	100%{
+		-webkit-transform: rotate(45deg);
+		-webkit-transform-origin: 10% 10%;
+	}
+}
+
+@keyframes spin { 
+	100%{
+		transform: rotate(45deg);
+		transform-origin: 10% 10%;
+	}
 }
 
 
@@ -125,12 +147,6 @@ body{ height: 100%;
 	min-height: 200px;
 	display: table;
 	width: 100%;
-}
-
-@media (max-width: 760px) {
-	#front{
-		background-attachment: scroll;
-	}
 }
 
 #greeting{
@@ -228,6 +244,7 @@ body{ height: 100%;
 	padding: 0.2em 1em 1em 1em;
 	margin-bottom: 2em;
 	margin-top: 2em;
+	color: ##616161;
 }
 
 #firstAbout{
@@ -256,7 +273,7 @@ body{ height: 100%;
 }
 
 .aboutResume a{
-	color: black;
+	color: #616161;
 }
 
 #resumeButton{
@@ -264,7 +281,7 @@ body{ height: 100%;
 	margin-right: auto;
 	display: inline-block;
 	text-align: center;
-	border: 2px solid black;
+	border: 3px solid #616161;
 }
 
 .important{
@@ -274,16 +291,39 @@ body{ height: 100%;
 
 #projects{
 	background-color: #6D7993;
-	height: 100%;
 	display: flex;
-/*	-webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);  
-	-moz-box-shadow:    0px 0px 10px 3px rgba(0, 0, 0, 0.5);
-	box-shadow:         0px 0px 10px 3px rgba(0, 0, 0, 0.5);*/
+}
+
+
+.proj1{
+	background-color: black;
+}
+
+#BlastLogo{
+	width: 100%;
+	height: auto;
+}
+
+.proj2{
+	background-color: white;
+}
+
+#Wifinder_Logo{
+	height: auto;
+	width: 100%;
+}
+
+.proj3{
+	background-color: white;
+}
+
+#GCT_Logo{
+	height: auto;
+	width: 100%;
 }
 
 #contact{
 	width: 100%;
-	height:50%;
 	background-image:url(../images/computers.jpeg);
 	background-size: cover; /* or contain depending on what you want */
 	background-position: center center;
@@ -300,24 +340,40 @@ body{ height: 100%;
 	box-shadow:         0px 0px 10px 3px rgba(0, 0, 0, 0.5);*/	
 }
 
-.row{
-}
-
 .contact p{
 	padding-left: 1em;
 	margin: 0em;
 	text-align: left;
 	color: white;
+	text-decoration: none;
+}
+
+.contact p:hover{
+	color: #6D7993;
+	text-decoration: none;
+}
+
+@media (max-width: 760px) {
+	#front{
+		background-attachment: scroll;
+	}
+	#contact{
+		background-attachment: scroll;
+	}
+	.contact p{
+		text-align: center;
+	}
 }
 
 .container .contact{
 	padding-top: 2em;
+	padding-bottom: 2em;
 	color: white;
 }
 
 
-.col-md-5 .p{
-	font-size: 20px;
+.col-md-5 p{
+	font-size: 1.5em;
 }
 
 .bottomBar{
