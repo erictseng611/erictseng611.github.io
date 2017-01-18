@@ -8,8 +8,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./public/js/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="./public/js/fontAwesome.js"></script>
+  <script src="./public/js/sly.min.js"></script>
+  <script src="http://darsa.in/sly/examples/js/vendor/plugins.js"></script> 
+  <script src="http://darsa.in/sly/examples/js/horizontal.js"></script>
+  <link rel="stylesheet" type="text/css" href="./public/css/horizontal.css">
   <link rel="stylesheet" type="text/css" href="./public/css/index.css">
   
   <link rel="apple-touch-icon" sizes="180x180" href="public/images/favicons/apple-touch-icon.png">
@@ -65,21 +70,22 @@
      <div class="container">
       <div class="row">
         <div class="col-sm-6">
+
+
           <div class="aboutDivider" id="firstAbout">
             <h2>Hi! I'm Eric Tseng. </h2>
-            <h4> I am a third year student at the University of California, San Diego majoring in Cognitive Science w/ a specialization in Human Computer Interaction and a minor in Computer Science. I am an aspiring UI/UX Designer and front-end web developer.</h4>
-            <h3>I believe in user-centered design because <b>form</b> should match <b>function</b>.</h3> 
+            <h4> I am a third year student at the University of California, San Diego majoring in Cognitive Science w/ a specialization in Human Computer Interaction and a minor in Computer Science. I am an aspiring UI/UX Designer and front-end web developer. I believe in user-centered design because form should match function. </h4>
           </div>
 
+
           <div class="aboutDivider">
-            <div class="text-mini-header"></div>
             <h2>Activities and Interests</h2>
-            <h4>I enjoy playing tennis on UCSD's NCAA team, participating in the Taiwanese American Student Association, and in my free time, play League of Legends and Overwatch. My hobbies include torturing my older sisters, drinking <ins>unhealthy</ins> amounts of boba, and hoisting heavy objects against the force of gravity.</h4>
+            <h4>I enjoy playing tennis on UCSD's NCAA team, participating in the Taiwanese American Student Association. My hobbies include playing League of Legends, finding good food, and going to the gym.</h4>
           </div>
 
 
           <div class="aboutResume">
-            <a href="resume.html" class="btn btn-lg" id="resumeButton">My Resume</a>
+            <a href="resume.html" class="btn btn-lg" id="resumeButton">RESUME</a>
           </div>
 
         </div>
@@ -90,22 +96,56 @@
     </div>
   </div>
 
-
   <div class="projects" id="projects">
     <div class="container">
-      <h1 style="color: white; text-align: center;">Projects</h1>
+      <div class="wrap">
+        <h1 style="color: white; text-align: center;">Projects</h1>
+        <div class="scrollbar desktop-only">
+          <div class="handle desktop-only">
+            <div class="mousearea desktop-only"></div>
+          </div>
+        </div>
 
-      <div class="row">
+        <div class="frame oneperframe" id="oneperframe">
+          <ul class="clearfix">
+            <li>
+              <div class="proj1">
+                <a href="https://www.blastathletics.com/" target="_blank">
+                  <img src="public/images/blastathleticslogo.png" id='BlastLogo' alt="Blast Athletics"></a>
+                </li>
+                <li>
+                  <div class="proj2">
+                    <a href="https://wife-finder.herokuapp.com/" target="_blank">
+                      <img src="public/images/WiFinder.png" id='Wifinder_Logo' alt="WiFinder"></a>
+                    </div>
+                  </li>
+                  <li> 
+                    <div class="proj3">
+                      <img src="public/images/globalclinicaltrials.png" id='GCT_Logo' alt="Global Clinical Trials"></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="controls center">
+                <button class="btn prev"><i class="icon-chevron-left"></i> prev</button>
+                <button class="btn next">next <i class="icon-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--       <div class="row">
         <div class="col-6 col-md-4">
           <div class="proj1">
             <a href="https://www.blastathletics.com/" target="_blank">
-              <img src="public/images/blastathleticslogo.png" id='BlastLogo' alt="Blast Athletics">
+              <img src="public/images/blastathleticslogo.png" id='BlastLogo' alt="Blast Athletics" >
             </div>
           </div>
 
           <div class="col-6 col-md-4">
             <div class="proj2">
-              <a href="https://wi-finder.herokuapp.com/" target="_blank">
+              <a href="https://wife-finder.herokuapp.com/" target="_blank">
                 <img src="public/images/WiFinder.png" id='Wifinder_Logo' alt="WiFinder"></a>
 
               </div>
@@ -116,9 +156,8 @@
               </div>
             </div>
           </div>
-          <br>
         </div>
-      </div>
+      </div> -->
 
       <div class="contact" id="contact">
         <div class="container">
@@ -136,7 +175,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></div>
-                  <div class="col-md-5"><a class="text-purple" href="https://www.linkedin.com/in/eric-tseng-b99b30132?trk=hp-identity-name"><p>https://www.linkedin.com/in/eric-tseng</p></a>
+                  <div class="col-md-5"><a class="text-purple" href="https://www.linkedin.com/in/eric-tseng"><p>https://www.linkedin.com/in/eric-tseng</p></a>
                   </div>
                 </div>
               </div>

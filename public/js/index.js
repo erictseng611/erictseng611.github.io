@@ -39,3 +39,4 @@ $('body').scrollspy({
 	target: '#nav_bar',
 	offset: 400
 });
+
