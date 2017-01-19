@@ -294,22 +294,41 @@ body{ height: 100%;
 }
 
 #BlastLogo{
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 	background-color: black;
 }
 
 
 #Wifinder_Logo{
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 	background-color: white;
 }
 
 
 #GCT_Logo{
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	*margin-left: .3em;
+	line-height: 30px;
+	color: #333333;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.15);
+	*zoom: 1;
 }
 
 #contact{
