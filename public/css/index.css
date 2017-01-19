@@ -162,16 +162,16 @@ body{ height: 100%;
 
 
 #downArrow{
-	height: auto;
 	position: absolute;
 	bottom: 10%;
 	display: block;
-	min-width: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
+	min-width: 40px;
 	max-width: 100px;
+	height: 70px;
 }
 
 
