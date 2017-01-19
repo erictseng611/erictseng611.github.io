@@ -70,25 +70,16 @@ body{ height: 100%;
 	transform: rotate(0);
 }
 
-@-moz-keyframes spin { 
-	100%{
-		-moz-transform: rotate(45deg);
-		-moz-transform-origin: 10% 10%;
-	}
+.is-hidden {
+	opacity: 0;
+	-webkit-transform: translate(0,-60px);
+	-webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
 }
 
-@-webkit-keyframes spin {
-	100%{
-		-webkit-transform: rotate(45deg);
-		-webkit-transform-origin: 10% 10%;
-	}
-}
-
-@keyframes spin { 
-	100%{
-		transform: rotate(45deg);
-		transform-origin: 10% 10%;
-	}
+.is-visible {
+	opacity: 1;
+	-webkit-transform: translate(0,0);
+	-webkit-transition: -webkit-transform .2s,background .3s,color .3s;
 }
 
 
