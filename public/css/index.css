@@ -16,6 +16,10 @@ body{ height: 100%;
 	z-index:999; /* makes sure it stays on top */
 }
 
+#shownav {
+    height: 20px;
+}
+
 #status {
 	width:200px;
 	height:200px;
@@ -70,16 +74,21 @@ body{ height: 100%;
 	transform: rotate(0);
 }
 
+#nav_bar{
+	min-width: 200px;
+	-webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
 .is-hidden {
 	opacity: 0;
-	-webkit-transform: translate(0,-60px);
-	-webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
 }
 
 .is-visible {
 	opacity: 1;
-	-webkit-transform: translate(0,0);
-	-webkit-transition: -webkit-transform .2s,background .3s,color .3s;
 }
 
 
