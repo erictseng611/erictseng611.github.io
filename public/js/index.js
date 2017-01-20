@@ -42,50 +42,97 @@ $('body').scrollspy({
 
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-/** ===========================================
-    Hide / show the master navigation menu
-============================================ */
+// /** ===========================================
+//     Hide / show the master navigation menu
+//     ============================================ */
 
-  // console.log('Window Height is: ' + $(window).height());
-  // console.log('Document Height is: ' + $(document).height());
+//   // console.log('Window Height is: ' + $(window).height());
+//   // console.log('Document Height is: ' + $(document).height());
 
-  var previousScroll = 0;
+//   var previousScroll = 0;
 
-  $(window).scroll(function(){
+//   $(window).scroll(function(){
 
-    var currentScroll = $(this).scrollTop();
+//   	var currentScroll = $(this).scrollTop();
 
-    /*
-      If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
-    */
-    if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
-      /*
-        If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
-      */
-      if (currentScroll > previousScroll){
-        window.setTimeout(hideNav, 100);
-      /*
-        Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
-      */
-      } else {
-        window.setTimeout(showNav, 100);
-      }
-      /* 
-        Set the previous scroll value equal to the current scroll.
-      */
-      previousScroll = currentScroll;
+//     /*
+//       If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
+//       */
+//       if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
+
+//         If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
+
+//         if (currentScroll > previousScroll){
+//         	window.setTimeout(hideNav, 100);
+//       /*
+//         Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
+//         */
+//     } else {
+//     	window.setTimeout(showNav, 100);
+//     }
+//       /* 
+//         Set the previous scroll value equal to the current scroll.
+//         */
+//         previousScroll = currentScroll;
+//     }
+
+// });
+
+//   function hideNav() {
+//   	$("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
+//   }
+//   function showNav() {
+//   	$("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
+//   }
+
+// });
+
+
+
+
+
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = 70;
+
+$(window).scroll(function(event){
+	didScroll = true;
+});
+
+setInterval(function() {
+	if (didScroll) {
+		hasScrolled();
+		didScroll = false;
+	}
+}, 250);
+
+function hasScrolled() {
+	var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta){
+    	return;
     }
 
-  });
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+           	console.log("scrolling down");
+        $('#nav_bar').removeClass('is-visible').addClass('is-hidden');
+    } else {
+        // Scroll Up
+        console.log("scrolling up");
+        if(st + $(window).height() < $(document).height()) {
+        	$('#nav_bar').removeClass('is-hidden').addClass('is-visible');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 
-  function hideNav() {
-    $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
-  }
-  function showNav() {
-    $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
-  }
-
-});
 
