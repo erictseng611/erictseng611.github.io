@@ -76,11 +76,11 @@ body{ height: 100%;
 
 #nav_bar{
 	min-width: 200px;
-	-webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .is-hidden {
@@ -242,7 +242,7 @@ body{ height: 100%;
 .aboutDivider{
 	background-color: white;
 	padding: 0.2em 1em 1em 1em;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	margin-top: 2em;
 	color: #616161;
 }
@@ -261,7 +261,7 @@ body{ height: 100%;
 }
 
 #circlePic{
-	margin: 4em;
+	margin: 5em;
 	width: 80%;
 	height: auto;
 
