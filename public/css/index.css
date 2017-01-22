@@ -6,6 +6,12 @@ body{ height: 100%;
 	overflow: hidden;
 }
 
+@font-face{
+	font-family: "Ailerons-Typeface";
+	src: url('../fonts/Ailerons-Typeface.otf'),
+	url('../fonts/Ailerons-Typeface.otf');
+}
+
 #preloader {
 	position:fixed;
 	top:0;
@@ -17,7 +23,7 @@ body{ height: 100%;
 }
 
 #shownav {
-    height: 20px;
+	height: 20px;
 }
 
 #status {
@@ -77,11 +83,16 @@ body{ height: 100%;
 #nav_bar{
 	min-width: 200px;
 	-webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
 }
+
+.navbar-brand:active {
+	outline: none;
+}
+
 
 .is-hidden {
 	opacity: 0;
@@ -230,7 +241,7 @@ body{ height: 100%;
 
 
 #about{
-	background-color: #05DSD5;
+	background-color: white;
 	width: 100%;
 }
 
@@ -293,32 +304,63 @@ body{ height: 100%;
 	background-color: #6D7993;
 }
 
-#BlastLogo{
-	width: auto;
-	height: 100%;
-	background-color: black;
+.proj1{
+	background-color: white;
+	color: black;
+	height: 500px;
 }
 
+#BlastLogo{
+	width: 100%;
+	height: auto;
+	background-color: black;
+	max-width: 50%;
+	vertical-align: top;
+}
+
+.proj2{
+	background-color: white;
+	height: 100%;
+	color: black;
+}
 
 #Wifinder_Logo{
 	width: auto;
-	height: 100%;
+	height: 35%;
+	max-height: 100%;
+	max-width: 100%;
 	background-color: white;
+	vertical-align: top;
 }
 
+.proj3{
+	background-color: white;
+	height: 100%;
+	color: black;
+}
 
 #GCT_Logo{
 	width: auto;
-	height: 100%;
+	height: 35%;
+	background-color: black;
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.projDesc{
+	width: 50%;
+	margin: 0 auto;
+	text-align: justify;
 }
 
 .button {
 	position: relative;
 	display: inline-block;
-	*display: inline;
+	display: inline;
 	padding: 4px 12px;
 	margin-bottom: 0;
-	*margin-left: .3em;
+	margin-left: .3em;
 	line-height: 30px;
 	color: #333333;
 	text-align: center;
@@ -377,6 +419,25 @@ body{ height: 100%;
 	.contact p{
 		text-align: center;
 	}
+	#BlastLogo{
+		max-height: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+	#Wifinder_Logo{
+		max-height: 90%;
+		max-height: 90%;
+		width: auto;
+		height: auto;
+	}
+	#GCT_Logo{
+		width: auto;
+		height: auto;
+	}
+	.projDesc{
+		width: 100%;
+	}
+
 }
 
 .container .contact{

@@ -87,8 +87,12 @@ body { background: #e8e8e8; }
 .controls { margin: 25px 0; text-align: center; }
 
 /* One Item Per Frame example*/
-.oneperframe { height: 500px; line-height: 300px; }
+.oneperframe { height: 500px; line-height: 30px; }
 .oneperframe ul li { width: 1140px; }
+
+@media (max-width: 760px) {
+	.oneperframe ul li { width: 350px; }
+}
 .oneperframe ul li.active { background: #333; }
 
 /* Crazy example */
