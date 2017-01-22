@@ -241,7 +241,7 @@ body{ height: 100%;
 
 
 #about{
-	background-color: white;
+	background-color: #C3C9D4;
 	width: 100%;
 }
 
@@ -251,7 +251,7 @@ body{ height: 100%;
 }
 
 .aboutDivider{
-	background-color: white;
+	background-color: transparent;
 	padding: 0.2em 1em 1em 1em;
 	margin-bottom: 2em;
 	margin-top: 2em;
@@ -316,6 +316,7 @@ body{ height: 100%;
 	background-color: black;
 	max-width: 50%;
 	vertical-align: top;
+	margin-top: 1em;
 }
 
 .proj2{
@@ -331,6 +332,7 @@ body{ height: 100%;
 	max-width: 100%;
 	background-color: white;
 	vertical-align: top;
+	margin-top: 1em;
 }
 
 .proj3{
@@ -340,6 +342,7 @@ body{ height: 100%;
 }
 
 #GCT_Logo{
+	margin-top: 1em;
 	width: auto;
 	height: 35%;
 	background-color: black;
