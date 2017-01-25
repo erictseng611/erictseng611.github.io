@@ -305,24 +305,43 @@ body{ height: 100%;
 }
 
 .proj1{
-	background-color: white;
-	color: black;
+	overflow: hidden;
+	background-image: url(../images/BlastDesktop.png);
+	background-repeat:no-repeat;
+	background-position: 0px 0px, 50% 50%;
+	background-size: 100%;
+	min-height: 200px;
+	width: 100%;
+	color: white;
 	height: 500px;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
+
 
 #BlastLogo{
 	width: 100%;
 	height: auto;
 	background-color: black;
 	max-width: 50%;
-	vertical-align: top;
-	margin-top: .5em;
 }
 
 .proj2{
-	background-color: white;
+	overflow: hidden;
+	background-image: url(../images/WiFinderMap.png);
+	background-repeat:no-repeat;
+	background-position: 0px 0px, 50% 50%;
+	background-size: 100%;
+	min-height: 200px;
+	width: 100%;
+	color: white;
 	height: 500px;
-	color: black;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 
 #Wifinder_Logo{
@@ -330,31 +349,39 @@ body{ height: 100%;
 	height: 35%;
 	max-height: 100%;
 	max-width: 100%;
-	background-color: white;
-	vertical-align: top;
-	margin-top: .5em;
+	background-color: #ECECEC;
+	border: 2px solid black;
 }
 
 .proj3{
-	background-color: white;
+	overflow: hidden;
+	background-image: url(../images/GCTbgpic.jpg);
+	background-repeat:no-repeat;
+	background-position: 0px 0px, 50% 50%;
+	background-size: 100%;
+	min-height: 200px;
+	width: 100%;
+	color: white;
 	height: 500px;
-	color: black;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 
 #GCT_Logo{
-	margin-top: .5em;
 	width: auto;
 	height: 35%;
-	background-color: black;
 	max-height: 100%;
 	max-width: 100%;
-	vertical-align: top;
+	border: 2px solid black;
 }
 
 .projDesc{
 	width: 50%;
 	margin: 0 auto;
 	text-align: justify;
+	vertical-align: middle;
+	background-color: 
 }
 
 .button {
