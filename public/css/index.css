@@ -326,10 +326,10 @@ body{ height: 100%;
 	height: auto;
 	background-color: black;
 	max-width: 50%;
+	border: 2px solid white;
 }
 
 .proj2{
-	overflow: fsldkj;
 	overflow: hidden;
 	background-image: url(../images/WiFinderMap.png);
 	background-repeat:no-repeat;
@@ -466,6 +466,20 @@ body{ height: 100%;
 	.projDesc{
 		width: 90%;
 		text-align: left;
+	}
+
+	.proj1{
+		background-color: gray;
+		background-image: none;
+	}
+
+	.proj2{
+		background-color: gray;
+		background-image: none;
+	}
+	.proj3{
+		background-color: gray;
+		background-image: none;
 	}
 
 }
