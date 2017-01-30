@@ -382,13 +382,12 @@ body{ height: 100%;
 	margin: 0 auto;
 	text-align: justify;
 	vertical-align: middle;
-	background-color: 
+	background-color: transparent;
 }
 
 .button {
 	position: relative;
 	display: inline-block;
-	display: inline;
 	padding: 4px 12px;
 	margin-bottom: 0;
 	margin-left: .3em;
@@ -401,7 +400,9 @@ body{ height: 100%;
 	border: 1px solid #ccc;
 	border-bottom-width: 2px;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.15);
-	*zoom: 1;
+	zoom: 1;
+	border-radius: 10px;
+	margin: 0 10px;
 }
 
 #contact{
@@ -451,16 +452,15 @@ body{ height: 100%;
 		text-align: center;
 	}
 	#BlastLogo{
-		max-height: 100%;
-		max-width: 100%;
+		max-width: 90%;
 		height: auto;
 	}
 	#Wifinder_Logo{
-		max-height: 90%;
-		max-height: 90%;
+		width: 90%;
+		height: auto;
 	}
 	#GCT_Logo{
-		width: auto;
+		width: 90%;
 		height: auto;
 	}
 	.projDesc{
