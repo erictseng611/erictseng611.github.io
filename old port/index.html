@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Eric Tseng</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./public/js/fontAwesome.js"></script>
+  <script src="./public/js/sly.min.js"></script>
+  <script src="./public/js/plugins.js"></script>
+  <script src="./public/js/horizontal.js"></script>
+  <link rel="stylesheet" type="text/css" href="./public/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./public/css/horizontal.css">
+  <link rel="stylesheet" type="text/css" href="./public/css/index.css">
+  
+</head>
+
+
+<body>
+
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+
+  <nav class="navbar navbar-default navbar-fixed-top is-visible"  id="nav_bar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">Eric <b>Tseng</b></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about" id="scrollToAbout">ABOUT</a></li>
+          <li><a href="#projects" id ="scrollToProjects">PROJECTS</a></li>
+          <li><a href="#contact" id="scrollToContact">CONTACT</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="front" id="front">
+    <h1 id="greeting"> Welcome</h1>
+    <div class="homeImage">
+    </div>
+<!--     <a href="#about" class="btn btn-circle page-scroll" id='downArrow'>
+      <i class="fa fa-angle-down"></i>
+    </a> -->
+  </div>
+
+  <div class="about" id="about">
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+
+
+        <div class="aboutDivider" id="firstAbout">
+          <h1 style="font-size: 50px; font-family:  ">About </h1>
+          <h4 style="font-size: 18px" > Hi, My name is Eric Tseng. I am a third year student at the University of California, San Diego majoring in Cognitive Science w/ a specialization in Human Computer Interaction and a minor in Computer Science. I am an aspiring UI/UX Designer and front-end web developer. I believe in user-centered design because form should match function.
+            <hr>
+            I am proficient in Java, C/C++, as well as HTML, CSS, Javascript. I am also comfortable with Node.js and using Photoshop, Illustrator, and Unity. I have experience creating wireframes, prototypes, mockups, and conducting user testing.
+            <hr>
+            I enjoy playing tennis on UCSD's NCAA team and participating in the Taiwanese American Student Association. My hobbies include playing League of Legends, finding good food, and carrying my groceries from my car to my refrigerator in one trip.</h4>
+          </div>
+
+
+          <div class="aboutResume">
+            <a href="resume.html" class="btn btn-lg" id="resumeButton">RESUME</a>
+          </div>
+
+        </div>
+        <div class="col-sm-6">
+          <img src="public/images/profilepicture.jpg" class="image img-circle img-profile desktop-only" id='circlePic' alt="Eric Tseng">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <div class="container">
+
+      <div class="wrap">
+        <h1 style="color: white; text-align: center;">Projects</h1>
+
+        <div class="scrollbar desktop-only">
+          <div class="handle desktop-only">
+            <div class="mousearea desktop-only">
+            </div>
+          </div>
+        </div>
+
+        <div class="frame oneperframe" id="oneperframe">
+          <ul class="clearfix">
+            <li>
+              <div class="proj1">
+                <a href="https://www.blastathletics.com/" target="_blank"><img src="public/images/blastathleticslogo.png" id='BlastLogo' alt="Blast Athletics"></a>
+                <div class="projDesc">
+                  <p style="font-size: 16px;">As an UI / UX Intern, I helped design user interface for core functionalities of the platform which included the dashboard, newsfeed, fundraiser, and personal/team profiles. I used photoshop to create wireframes, screen mockups, and interface design specifications. I worked closely with the lead programmer to improve and implement UI to optimize user experience.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="proj2">
+                <a href="https://wife-finder.herokuapp.com/" target="_blank">
+                  <img src="public/images/WiFinder.png" id='Wifinder_Logo' alt="WiFinder"></a>
+                  <div class="projDesc">
+                    <p style="font-size: 16px;">WiFinder is project that was created for a school assignment where we were to create an app with the idea of "Smart Cities". The goal of the app was to provide users with a wifi speed test and show them where on the UCSD campus, was the fastest reported wifi among users. We used node.js with express.js as the framework for our website. I led the project's UI / UX design where I wrote the css and javascript for the interface. </p>
+                  </div>
+                </div>
+              </li>
+
+              <li> 
+                <div class="proj3">
+                  <a href="gct.html" target="_blank">
+                    <img src="public/images/globalclinicaltrials.png" id='GCT_Logo' alt="Global Clinical Trials"></a>
+                    <div class="projDesc">
+                      <p style="font-size: 16px;">I helped design the template for company's first national Global Clinical Trials monthly newsletters. While working there, I also researched and wrote articles for the Clinical Trials Guru blog regarding data protection, compliance, cyber security, data privacy and technology.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="controls center">
+              <button class="button prev desktop-only"><i class="icon-chevron-left"></i>PREV</button>
+              <button class="button next desktop-only">NEXT<i class="icon-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="contact" id="contact">
+        <div class="container">
+          <h1 style="color: white;">Contact</h1>
+          <div class="container contact">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-1"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+                  <div class="col-md-5"><p>etseng@ucsd.edu</p></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1"><i class="fa fa-github fa-2x" aria-hidden="true"></i></div>
+                  <div class="col-md-5"><a class="text-purple" href="https://github.com/erictseng611"><p>github.com/erictseng611</p></a></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></div>
+                  <div class="col-md-5"><a class="text-purple" href="https://www.linkedin.com/in/eric-tseng"><p>https://www.linkedin.com/in/eric-tseng</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomBar">
+        <div class="containercr">
+          <div class="copyright">
+            <p> &copy;  Eric Tseng 2017 </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <script src="./public/js/index.js"></script>
+    </body>
+    </html>
