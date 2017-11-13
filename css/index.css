@@ -1,15 +1,12 @@
-@font-face {
-  font-family: Raleway;
-  src: local("./fonts/Raleway/Raleway-Regular"),
-       local("./fonts/Raleway/Raleway-Regular"),
-  font-weight: bold;
-}
-
 html, body{
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 
@@ -22,6 +19,23 @@ html, body{
 	background-size: cover;
 	background-position: center ;
 	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+}
+
+#introduction{
+	margin-left: 6rem;
+	width: 450px;
+	font-weight: bold;
+}
+
+#introduction h1{
+	font-size: 3rem;
+}
+
+#introduction p{
+	font-size: 2rem;
+	font-weight: 300;
 }
 
 .section_body{
@@ -73,6 +87,7 @@ html, body{
 	text-decoration: none;
 	font-family: inherit;
 	font-weight: bold;
+	font-variant: small-caps;
 }
 
 .nav-link:hover{
@@ -98,19 +113,48 @@ html, body{
 	font-size: 1.1rem;
 }
 
-.about_body{
-	color: black;
+
+/* About Section */
+
+#about_content{
+	width: 70%;
+	min-width: 300px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: white;
+}
+
+#about_content p{
+	padding: 1rem;
+}
+
+#about_content figure{
+	margin: 0;
+	padding: 1rem;
+	display: inline-block;
+	flex-basis: 50%;
+	border-top: 1rem solid #f9f9f9
+}
+
+#about_content figure:first-of-type{
+	border-right: 1rem solid #f9f9f9;
+}
+
+.large-icon{
+	height: 100px;
+	width: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 .about_header{
 	color: inherit;
 	background-color: white;
-	width: 715px;
+	width: 50%;
 	margin: 0 auto;
 }
 
 .about_header_text{
-	width: 715px;
 	max-width: 80%;
 	margin: 0 auto;
 	text-align: left;
@@ -127,37 +171,26 @@ html, body{
     color: inherit;	
 }
 
-.large-icon{
-	height: 100px;
-	width: auto;
-}
 
 .color-inverted{
 	filter: invert(100%);
 }
 
 .snippet{
-	width: 350px;
-	max-width: 85%;
+	width: 20%;
+	padding: 2.5%;
 	margin-right: 20px;
 	margin-top: auto;
 	background-color: white;
-}
-
-.developer_snippet_text{
 	text-align: left;
-	margin-top: auto;
 }
 
-.design_snippet{
-	width: 350px;
-	max-width: 100%;
+.large-icon{
+	height: 100px;
+	width: auto;
+	text-align: center;
 }
 
-.design_snippet_text{
-	text-align: left;
-	margin-top:auto;
-}
 
 .about_footer{
 	width: 100%;
@@ -257,11 +290,6 @@ input[type='text']{
 	font-size: 8px;
 }
 
-p {
-	color: #555;
-	line-height: 1.5;
-}
-
 .emphasized-text{
 	display: inline-block;
 	font-size: 2em;
@@ -323,6 +351,20 @@ p {
 
 /* smaller than a tablet */
 @media (max-width: 768px){
+
+	#introduction{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#about_content figure{
+		flex-basis: 100%;
+	}
+
+	#about_content figure:first-of-type{
+		border-right: 0;
+	}
+
 	.growText{
 		transition: font 0.2s ease-in-out;
 		font-size: 20px;

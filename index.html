@@ -9,11 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <script src="https://use.fontawesome.com/19a3a9b6f2.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
-  
   <div id="intro_section">
+    <section id="introduction"> 
+      <h1>Hi, I'm Eric Tseng</h1>
+      <p> I'm a fourth-year student at UCSD pursuing a career in web development.</p>
+      <p> This is a work in progress... </p>
+    </section>
     <nav class="one-edge-shadow" id="navbar">
       <div class="navbar-center align-center">
         <a href="#" class="nav-link inline" id="about" tabindex="0"> About </a>
@@ -25,34 +30,27 @@
   </div>
 
   <div class="about_body section_body align-center">
-    <div class="about_header">
-      <h1> What I'm about </h1>
-      <div class="about_header_text">
-        <p> As a cognitive science major with a specialization in design and interaction (HCI) and a computer science minor, I know how to create products from inception to implementation. I believe in obssessive attention to detail when making a UI seemless and unnoticeable to the end-user. </p>
+    <h1> What I'm <strong>about</strong> </h1>
+    <div id="about_content">
+      <p> As a cognitive science major with a specialization in design and interaction (HCI) and a computer science minor, I know how to create products from inception to implementation. I believe in obssessive attention to detail when making a UI seemless and unnoticeable to the end-user. </p>
+      <div style="display: flex; flex-wrap: wrap">
+        <figure>
+           <img class="large-icon" src="./images/command-line.svg">
+           <figcaption>
+            <h2 class="align-center"> Development </h2>
+            <p>I create web apps with the traditional tools: HTML(5), CSS(3), and good ol' vanilla Javascript. I am also comfortable working with front-end frameworks such as jQuery and React. </p>
+           </figcaption>
+        </figure>
+        <figure>
+          <img class="large-icon" src="./images/web-design.svg">
+          <figcaption>
+            <h2 class="align-center"> UI/UX Design </h2>
+            <p>I use sketch and balsamiq to wireframe and hook them up with invision or uxpin to create interactive prototypes. Development should be user-centered and design-driven. </p>
+          </figcaption>
+        </figure>
       </div>
     </div>
-    <div class="about_container align-center">
-      <div class="snippet inline">
-        <img class="large-icon" src="./images/command-line.svg">
-        <div class="developer_snippet_text inline">
-          <h2 style="text-align:center;"> Development </h2>
-          <p>I create web apps with the traditional tools: HTML(5), CSS(3), and good ol' vanilla Javascript. I am also comfortable working with front-end frameworks such as jQuery and React. </p>
-        </div>
-      </div>
-      <div class="snippet inline">
-        <img class="large-icon" src="./images/web-design.svg">
-        <div class="design_snippet_text inline">
-          <h2 style="text-align:center;"> UI/UX Design </h2>
-          <p>I use sketch and balsamiq to wireframe and hook them up with invision or uxpin to create interactive prototypes. Development should be user-centered and design-driven. </p>
-        </div>
-      </div>
-    </div>
-    <div class="about_footer">
-      <div class="about_footer_text">
-        <!-- <p class="emphasized-text"> "Form should match Function" - Me</p> -->
-      </div>
-      <!-- <a href="./about.html" class="link_redirect" style="float: right;"> My life unplugged >> </a> -->
-    </div>
+
   </div>
 
   <div class="work_body section_body">
