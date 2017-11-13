@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div id="intro_section">
+  <div id="intro_section" class="dividingContent">
     <section id="introduction"> 
       <h1>Hi, I'm Eric Tseng</h1>
       <p> I'm a fourth-year student at UCSD pursuing a career in web development.</p>
@@ -29,23 +29,23 @@
     </nav>
   </div>
 
-  <div class="about_body section_body align-center">
+  <div class="about_body section_body align-center dividingContent">
     <h1> What I'm <strong>about</strong> </h1>
     <div id="about_content">
       <p> As a cognitive science major with a specialization in design and interaction (HCI) and a computer science minor, I know how to create products from inception to implementation. I believe in obssessive attention to detail when making a UI seemless and unnoticeable to the end-user. </p>
-      <div style="display: flex; flex-wrap: wrap">
+      <div id="skill_container">
         <figure>
            <img class="large-icon" src="./images/command-line.svg">
            <figcaption>
             <h2 class="align-center"> Development </h2>
-            <p>I create web apps with the traditional tools: HTML(5), CSS(3), and good ol' vanilla Javascript. I am also comfortable working with front-end frameworks such as jQuery and React. </p>
+            <p>I create web apps with the traditional tools: HTML(5), CSS(3), and good ol' vanilla Javascript. I also have experience working with front-end frameworks such as jQuery and React. </p>
            </figcaption>
         </figure>
         <figure>
           <img class="large-icon" src="./images/web-design.svg">
           <figcaption>
             <h2 class="align-center"> UI/UX Design </h2>
-            <p>I use sketch and balsamiq to wireframe and hook them up with invision or uxpin to create interactive prototypes. Development should be user-centered and design-driven. </p>
+            <p>I use sketch and balsamiq to wireframe and hook them up with invision or uxpin to create interactive prototypes. I believe that development should be user-centered and design-driven. </p>
           </figcaption>
         </figure>
       </div>
@@ -53,7 +53,7 @@
 
   </div>
 
-  <div class="work_body section_body">
+  <div class="work_body section_body dividingContent">
     <h1> My Work </h1>
     <div class="work_section">
       <h2> Princess<sup>&copy;</sup> </h2>
@@ -77,13 +77,13 @@
     </div>
   </div>  
 
-  <div class="contact_body align-center">
+  <div class="contact_body align-center dividingContent">
     <h1>Didn't see something you were looking for?</h1>
     <h3> Get in touch! I would love to talk.</h3>
     <form action="#" method="POST" class="contact_form">
-      <h3>Name</h3> <input type="text" name="name">
-      <h3>Email</h3> <input type="text" name="email">
-      <h3>Message</h3><textarea name="message" rows="10" cols="25" class="contact_message"></textarea><br />
+      <p><label>Name<br> <input type="text" name="name"></label></p>
+      <p><label>Email<br> <input type="text" name="email"></label></p>
+      <h3>Message</h3><textarea name="message" rows="10" cols="25" class="contact_message" style="resize: none;"></textarea><br />
       <div class="contact_buttons align-center">
         <button type="submit"> Send</button><button type="reset" value="Clear"> Clear </button>
       </div>

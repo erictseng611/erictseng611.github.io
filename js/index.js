@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	const body = document.querySelector('body');
 	var intro_section = document.getElementById('#intro_section');
+	var sections = document.querySelectorAll('.dividingContent');
 
 	function Navbar(elementId){
 
@@ -56,26 +57,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		this.activeSection = function(){
 			//create new array of the offsetTop's of the various sections and turn into array
 			//so that we can use the map over function
-			// var sectionsOffTop = [].slice.call(sections).map(section => {
-			// 	return section.offsetTop;
-			// });
+			var sectionsOffTop = [].slice.call(sections).map(section => {
+				return section.offsetTop;
+			});
 
-			//create temporary array so that we can still access ('this' keyword gets destroyed in scope)
-			// var tempNavLinks = this.navlinks;
-			// sectionsOffTop.forEach(function(sectionOffset, index){
-			// 	console.log(sections);
-			// 	if(window.scrollY >= sectionOffset + intro_section.offsetHeight/2){
-			// 		tempNavLinks.forEach(navlink => {
-			// 			navlink.classList.remove('nav-link-selected');
-			// 		});
-			// 		tempNavLinks[index].classList.add('nav-link-selected');
-			// 	}
+			// create temporary array so that we can still access ('this' keyword gets destroyed in scope)
+			var tempNavLinks = this.navlinks;
+			sectionsOffTop.forEach(function(sectionOffset, index){
+				if(window.scrollY >= sectionOffset + sections[0].offsetHeight/2){
+					tempNavLinks.forEach(navlink => {
+						navlink.classList.remove('nav-link-selected');
+					});
+					tempNavLinks[index].classList.add('nav-link-selected');
+				}
 
-			// 	//if the page is at the top, remove the styling from the about nav-link
-			// 	if(window.scrollY == 0) {
-			// 		tempNavLinks[0].classList.remove('nav-link-selected');
-			// 	}
-			// });
+				//if the page is at the top, remove the styling from the about nav-link
+				if(window.scrollY == 0) {
+					tempNavLinks[0].classList.remove('nav-link-selected');
+				}
+			});
 		};
 
 		//fixes the nav to the top of the page after you scroll past the bar
