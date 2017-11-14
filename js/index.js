@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	const body = document.querySelector('body');
 	var intro_section = document.getElementById('#intro_section');
 	var sections = document.querySelectorAll('.dividingContent');
+	var sectionsOffTop = [].slice.call(sections).map(section => {
+		return section.offsetTop;
+	});
 
 	function Navbar(elementId){
 
@@ -57,9 +60,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		this.activeSection = function(){
 			//create new array of the offsetTop's of the various sections and turn into array
 			//so that we can use the map over function
-			var sectionsOffTop = [].slice.call(sections).map(section => {
-				return section.offsetTop;
-			});
 
 			// create temporary array so that we can still access ('this' keyword gets destroyed in scope)
 			var tempNavLinks = this.navlinks;
