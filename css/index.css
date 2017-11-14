@@ -85,7 +85,7 @@ html, body{
 	font-size: 1rem;
 	margin-left: 1rem;
 	cursor: pointer;
-	transition: transform 0.3s ease-in-out;
+	transition: font 0.3s ease-in-out;
 	opacity: 1;
 	text-decoration: none;
 	font-family: inherit;
@@ -112,8 +112,8 @@ html, body{
 }
 
 .growText{
-	transition: transform 0.2s ease-in;
-	transform: scale(1.2);
+	transition: font 0.2s ease-in;
+	font-size: 1.2rem;
 }
 
 
@@ -384,6 +384,7 @@ input[type='text']{
 
 	#about_content figure:first-of-type{
 		border-right: 0;
+		margin: 0 0 2rem 0;
 	}
 
 	.growText{
