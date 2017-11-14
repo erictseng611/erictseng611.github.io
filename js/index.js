@@ -107,6 +107,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	navbarObj.init();
 
 
+	//preventing the browser navigation on mobile from resizing bg image 
+	var background = document.getElementById('intro_section');
+	window.addEventListener('resize', resizeBackground);
+
+	function resizeBackground(){
+		if(mobileCheck){
+			background.offsetHeight = (window.offsetHeight + 60);
+		}
+	}
+
+
 
 	function mobileCheck (){
 		var isMobile = false; //initiate as false
