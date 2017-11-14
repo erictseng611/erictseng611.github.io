@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			this.topOfNav = this.navbar.offsetTop;
 			this.navbarHeight = navbar.offsetHeight;
 
-			//if you are looking at this, sorry for this shit LOL
-			this.navlinks.forEach(navlink => {
+			// if you are looking at this, sorry for this shit LOL
+			this.navlinks.forEach(function(navlink, index) {
 				navlink.addEventListener('click', function(){
-					const element = document.querySelector(`.${navlink.id}_body`);
+					const element = sections[index + 1];
 
 					//scroll to section of each corresponding navlink
-					scrollIt(element, 600,'easeOutQuad', null);
+					scrollIt(element, 600,'linear', null);
 
 				});
 			});
@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			//if the page has been scrolled down where the navbar has been fixed,
 			//the navbar offsetTop gets set to 0. In the case where user resizes the screen,
 			//and this is happening. Then set the offsetTop to the bottom of the intro section
-			sections = document.querySelectorAll('.section');
 			if(this.navbar.offsetTop == 0){
+				console.log(sections[0]);
 				this.topOfNav = sections[0].offsetHeight;
 			} else{
 				this.topOfNav = this.navbar.offsetTop;
@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					});
 					tempNavLinks[index].classList.add('nav-link-selected');
 				}
-
 				//if the page is at the top, remove the styling from the about nav-link
 				if(window.scrollY == 0) {
 					tempNavLinks[0].classList.remove('nav-link-selected');
@@ -117,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	};
 
 	function scrollIt(destination, duration = 200, easing = 'linear', callback) {
-
 		const easings = {
 			linear(t) {
 				return t;
@@ -155,13 +153,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			const timeFunction = easings[easing](time);
 			window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
 
-			if (window.pageYOffset === destinationOffsetToScroll) {
+			if (Math.ceil(window.pageYOffset) === destinationOffsetToScroll) {
 				if (callback) {
 					callback();
 				}
 				return;
 			}
-
 			requestAnimationFrame(scroll);
 		}
 

@@ -12,7 +12,7 @@ html, body{
 
 
 #intro_section {
-	height: 100%;
+	min-height: 100%;
 	position: relative;
 	width: 100%;
 	background-image: url("../images/background.jpg");
@@ -67,7 +67,7 @@ html, body{
 /* navbar */
 
 #navbar{
-	min-height: 10%;
+	height: 10%;
 	background-color: rgba(0,0,0, 0);
 	position: absolute;
 	top: 90%;
@@ -86,7 +86,7 @@ html, body{
 	font-size: 1rem;
 	margin-left: 1rem;
 	cursor: pointer;
-	transition: font 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
 	opacity: 1;
 	text-decoration: none;
 	font-family: inherit;
@@ -113,8 +113,8 @@ html, body{
 }
 
 .growText{
-	transition: font 0.2s ease-in;
-	font-size: 1.2rem;
+	transition: transform 0.2s ease-in;
+	transform: scale(1.2);
 }
 
 
@@ -379,18 +379,27 @@ input[type='text']{
 		margin: 0 auto;
 	}
 
+	#introduction h1{
+		font-size: 2rem;
+	}
+
+	#introduction p{
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
 	#about_content figure{
 		flex-basis: 100%;
 	}
 
 	#about_content figure:first-of-type{
 		border-right: 0;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	.growText{
-		transition: font 0.2s ease-in-out;
-		font-size: 1.2rem;
+		transition: transform 0.2s ease-in-out;
+		transform: scale(1.05);
 	}
 
 	.nav-link{
