@@ -12,7 +12,7 @@ html, body{
 
 
 #intro_section {
-	min-height: 100%;
+	min-height: 100vh;
 	position: relative;
 	width: 100%;
 	background-image: url("../images/background.jpg");
