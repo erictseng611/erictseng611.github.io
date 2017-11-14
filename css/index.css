@@ -68,10 +68,11 @@ html, body{
 
 #navbar{
 	min-height: 10%;
-	width: 100%;
 	background-color: rgba(0,0,0, 0);
 	position: absolute;
 	top: 90%;
+	left: 0;
+	right: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
