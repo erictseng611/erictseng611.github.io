@@ -15,7 +15,7 @@ html, body{
 	min-height: 100vh;
 	position: relative;
 	width: 100%;
-	background-image: url("../images/background.jpg");
+	background-image: url("../images/IMG_9254.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center ;
@@ -26,8 +26,11 @@ html, body{
 
 #introduction{
 	margin-left: 6rem;
+	color: #f9f9f9;
 	width: 450px;
 	font-weight: bold;
+	background-color: rgba(0,0,0, .3);
+	padding: 0 0 0 2rem;
 }
 
 #introduction h1{
@@ -78,7 +81,7 @@ html, body{
 	justify-content: center;
 	align-items: center;
 	transition: background-color .3s;
-	color: black;
+	color: white;
 } 	
 
 .nav-link{
@@ -95,7 +98,7 @@ html, body{
 }
 
 .nav-link:hover{
-	color: #3e3e3e;
+	color: black;
 }
 
 .nav-link:focus{
@@ -113,7 +116,7 @@ html, body{
 }
 
 .growText{
-	transition: transform 0.2s ease-in;
+	transition: transform 0.2s cubic-bezier(0, 1.25, 1, 1);
 	transform: scale(1.2);
 }
 
@@ -331,10 +334,13 @@ input[type='text']{
 }
 
 .link-redirect{
-	border: 1.25px solid black;
 	padding: .25rem;
 	text-decoration: none;
 	color: inherit;
+}
+
+.link-redirect:hover{
+	background-color: #e9e9e9;
 }
 
 .inline{
@@ -381,6 +387,8 @@ input[type='text']{
 	#introduction{
 		width: 80%;
 		margin: 0 auto;
+		background-color: rgba(0,0,0, .3);
+		padding: 1rem;
 	}
 
 	#introduction h1{

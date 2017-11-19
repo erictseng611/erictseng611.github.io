@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			//and this is happening. Then set the offsetTop to the bottom of the intro section
 			if(this.navbar.offsetTop == 0){
 				console.log(sections[0]);
-				this.topOfNav = sections[0].offsetHeight;
+				this.topOfNav = sections[0].offsetHeight - navbar.offsetHeight;
 			} else{
 				this.topOfNav = this.navbar.offsetTop;
 			}
@@ -82,7 +82,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			if(window.scrollY >= this.topOfNav) {
 				this.navbar.style.position = 'fixed';
 				this.navbar.style.top = "0";
-				this.navbar.style.backgroundColor = 'white';
+				this.navbar.style.backgroundColor = '#f9f9f9';
+				this.navbar.style.color = "#5a5a5a";
 				document.body.style.paddingTop = '56.19';
 				this.navlinks.forEach(navlink => {
 					if(!navlink.classList.contains('growText')){
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				this.navbar.style.position = 'absolute';
 				this.navbar.style.top = "90%";
 				document.body.style.paddingTop = 0;
+				this.navbar.style.color = "white";
 				this.navbar.style.backgroundColor = 'rgba(0,0,0, 0)';
 				this.navlinks.forEach(navlink => {
 					if(navlink.classList.contains('growText')){
