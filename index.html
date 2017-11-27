@@ -16,7 +16,7 @@
   <div id="intro_section" class="dividingContent">
     <section id="introduction"> 
       <h1>Hi, I'm Eric Tseng</h1>
-      <p> I'm a fourth-year student at UCSD pursuing a career in web development.</p>
+      <p> I'm a fourth-year student at UCSD pursuing a career in engineering solutions to novel web challenges.</p>
       <p> This is a work in progress... </p>
     </section>
     <nav class="one-edge-shadow" id="navbar">
@@ -30,9 +30,9 @@
   </div>
 
   <div class="about_body section_body align-center dividingContent">
-    <h1> What I'm <strong>about</strong> </h1>
+    <h1> Who I <strong>am</strong> </h1>
     <div id="about_content">
-      <p> As a cognitive science major with a specialization in design and interaction (HCI) and a computer science minor, I know how to create products from inception to implementation. I believe in obssessive attention to detail when making a UI seemless and unnoticeable to the end-user. </p>
+      <p> As a cognitive science major specializing in design and interaction (HCI) with a minor in computer science, I know how to create products from inception to implementation. I want to continue learning not just through studying, but through doing &ndash; by creating cool stuff. </p>
       <div id="skill_container">
         <figure>
            <img class="large-icon" src="./images/command-line.svg">
@@ -45,7 +45,7 @@
           <img class="large-icon" src="./images/web-design.svg">
           <figcaption>
             <h2 class="align-center"> UI/UX Design </h2>
-            <p>I use sketch and balsamiq to wireframe and hook them up with invision or uxpin to create interactive prototypes. I believe that development should be user-centered and design-driven. </p>
+            <p> I believe that development should be user-centered and design-driven because I develop for humans, not devices. I believe in obssessive attention to detail when making a UI seemless and unnoticeable to the end-user.</p>
           </figcaption>
         </figure>
       </div>
@@ -54,26 +54,41 @@
   </div>
 
   <div class="work_body section_body dividingContent">
-    <h1> My Work </h1>
-    <div class="work_section">
-      <h2> Princess<sup>&copy;</sup> </h2>
-      <h3 class="no-margin"> Front-end Development -- Intern</h3>
-      <a href="https://www.princess.com"><img src="./images/princess.png" class="work-image"></a>
-      <div class="work_details row">
-        <div class="work_skills inline col-1-4">
-          <h3> Skills: </h3>
-          <ul class="no-margin">
-            <li>HTML5,</li>
-            <li>CSS3,</li>
-            <li>JQuery,</li>
-            <li>SVN,</li>
-            <li>WCAG 2.0 (ADA Compliance)</li>
-          </ul>
-        </div>
-        <div class="work_description inline col-3-4">
-          <p style="color: black;"> As a front-end developer at Princess cruises I worked on 3 main projects: Securing princess.com, building a new login module, and implementing WCAG 2.0 standards across the website. To secure the main princess website, I used HP Fortify to help me detect vulnerabilities in the code and fix security issues like open redirects and cross-site scripting. In addition, I built a new login module that would be available on the navigation bar of every page and used adobe target to run a live A/B test on the changes. Furthermore, I created a modified version of Able Player that is in line with WCAG standards as well as tailoring to the design specifications of my team. </p>
-        </div>
-      </div>
+    <h1 style="color:white;"> My Work </h1>
+    <div class="work_section" id="workContainer">
+
+      <figure class="work-card">
+        <img src="./images/princessLogo.png"> 
+        <figcaption>
+          <h2>Princess <span style = "display: block;">Cruises</span></h2>
+          <p> some desc </p>
+        </figcaption>
+      </figure>
+
+      <figure class="work-card">
+        <img src="./images/WiFinder.png"> 
+        <figcaption>
+          <h2> WiFinder </h2>
+          <p> some desc </p>
+        </figcaption>
+      </figure>
+
+      <figure class="work-card">
+        <img src="./images/gctLogo.png"> 
+        <figcaption>
+          <h2> Global Clinical Trials </h2>
+          <p> some desc </p>
+        </figcaption>
+      </figure>
+
+      <figure class="work-card">
+        <img src="./images/blastLogo.png"> 
+        <figcaption>
+          <h2> Blast Athletics </h2>
+          <p> some desc </p>
+        </figcaption>
+      </figure>
+
     </div>
   </div>  
 
@@ -98,7 +113,8 @@
     <div class="subtle">Icons made by <a href="http://www.freepik.com" title="Freepik" tabindex="-1">Freepik</a> from <a href="https://www.flaticon.com/" tabindex="-1" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" tabindex="-1" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
 
-
+  <script src="./js/picoModal.min.js"></script>
   <script src="./js/index.js"></script>
+
 </body>
 </html>
