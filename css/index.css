@@ -306,6 +306,11 @@ html, body{
 	width: 100%;
 }
 
+.modal img:hover{
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
 .modal h1{
 	font-size: 3rem;
 	margin: 0;
@@ -355,9 +360,9 @@ html, body{
 }
 
 .contact_form{
-	width: 82%;
+	width: 100%;
 	text-align: left;
-	margin: 0 auto;
+	margin: 0;
 }
 
 .contact_body form > p{

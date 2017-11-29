@@ -88,15 +88,15 @@
     </div>
   </div>  
 
-  <div class="contact_body align-center dividingContent">
+  <div class="contact_body dividingContent">
     <h1>Didn't see something you were looking for?</h1>
     <h3> Get in touch! I would love to talk.</h3>
-    <form action="#" method="POST" class="contact_form">
+    <form action="contact-form-handler.php" method="POST" name="contactform" class="contact_form">
       <p><label>Name<br> <input type="text" name="name"></label></p>
       <p><label>Email<br> <input type="text" name="email"></label></p>
       <h3>Message</h3><textarea name="message" rows="10" cols="25" class="contact_message" style="resize: none;"></textarea><br />
       <div class="contact_buttons align-center">
-        <button type="submit"> Send</button><button type="reset" value="Clear"> Clear </button>
+        <button type="reset" value="Clear"> Clear </button><button type="submit"> Send</button>
       </div>
     </form>
   </div>
@@ -109,6 +109,13 @@
     <div class="subtle">Icons made by <a href="http://www.freepik.com" title="Freepik" tabindex="-1">Freepik</a> from <a href="https://www.flaticon.com/" tabindex="-1" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" tabindex="-1" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
 
+  <script src="./js/gen_validatorv31.js"></script>
+  <script language="JavaScript">
+    var frmvalidator  = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name"); 
+    frmvalidator.addValidation("email","req","Please provide your email"); 
+    frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+  </script>
   <script src="./js/picoModal.min.js"></script>
   <script src="./js/index.js"></script>
 
