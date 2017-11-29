@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 								<figcaption>
 									<p> Desktop and Mobile Views </p>
 								</figcaption>
-								<a href="https://www.princess.com/"><img src="../images/princess_modal.png" alt="Princess Cruises Desktop and Mobile View"></a>		
+								<a href="https://www.princess.com/"><img src="./images/princess_modal.png" alt="Princess Cruises Desktop and Mobile View"></a>		
 							</figure>
 						</section>`,
 			closeHtml:"<span> Close </span>",
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 								<figcaption>
 									<p> Desktop view </p>
 								</figcaption>
-								<a href="http://wife-finder.herokuapp.com/"><img src="../images/WiFinder_modal.png" alt="WiFinder image"></a>
+								<a href="http://wife-finder.herokuapp.com/"><img src="./images/WiFinder_modal.png" alt="WiFinder image"></a>
 							</figure>
 						</section>`,
 			closeHtml:"<span> Close </span>",
@@ -192,8 +192,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 								<figcaption>
 									<p> Dashboard (Left) News Feed (Right) Mobile View </p>
 								</figcaption>
-								<a href="https://www.blastathletics.com"><img src="../images/Blast_dash_Mobile.png" alt="Blast Athletics dash"></a>
-								<a href="https://www.blastathletics.com"><img src="../images/Blast_feed_Mobile.png" alt="Blast Athletics feed"></a>								
+								<a href="https://www.blastathletics.com"><img src="./images/Blast_dash_Mobile.png" alt="Blast Athletics dash"></a>
+								<a href="https://www.blastathletics.com"><img src="./images/Blast_feed_Mobile.png" alt="Blast Athletics feed"></a>								
 							</figure>
 						</section>`,
 			closeHtml:"<span> Close </span>",
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							<p> <strong>Skills</strong>: Microsoft Suites</p>
 							<button class="resume-button_modal" onclick='location.href="./resume.html"'> View on my resume </button>
 							<figure>
-								<a href="http://www.globalclinicaltrials.org/"><img src="../images/GCT_website_Desktop.png" alt="Global Clinical Trials Website"></a>
+								<a href="http://www.globalclinicaltrials.org/"><img src="./images/GCT_website_Desktop.png" alt="Global Clinical Trials Website"></a>
 							</figure>
 						</section>`,
 			closeHtml:"<span> Close </span>",

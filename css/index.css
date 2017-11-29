@@ -253,7 +253,7 @@ html, body{
 	position: relative;
 }
 
-.work-card:nth-child(3){
+.work-card:nth-child(4){
 	background-color: rgba(0, 0, 0, 1);
 }
 .work-card:nth-child(5){
