@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 								<figcaption>
 									<p> Desktop and Mobile Views </p>
 								</figcaption>
-								<a href="https://www.princess.com/"><img src="./images/princess_modal.png" alt="Princess Cruises Desktop and Mobile View"></a>
+								<a href="https://www.princess.com/"><img src="./images/princess_modal.png" alt="Princess Cruises Desktop and Mobile View"></a>		
 							</figure>
 						</section>`,
 			closeHtml:"<span> Close </span>",
