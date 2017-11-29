@@ -186,14 +186,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 								<figcaption>
 									<p> Team Profile Desktop View </p>
 								</figcaption>
-								<a href="https://www.blastathletics.com"><img src="../images/Blast_teamProfile_Desktop.png" alt="Blast Athletics"></a>
+								<a href="https://www.blastathletics.com"><img src="./images/Blast_teamProfile.png" alt="Blast Athletics"></a>
 							</figure>
 							<figure class="modal_mobile_screen">
 								<figcaption>
 									<p> Dashboard (Left) News Feed (Right) Mobile View </p>
 								</figcaption>
 								<a href="https://www.blastathletics.com"><img src="./images/Blast_dash_Mobile.png" alt="Blast Athletics dash"></a>
-								<a href="https://www.blastathletics.com"><img src="./images/Blast_feed_Mobile.png" alt="Blast Athletics feed"></a>								
+								<a href="https://www.blastathletics.com"><img src="./images/Blast_feed.png" alt="Blast Athletics feed"></a>								
 							</figure>
 						</section>`,
 			closeHtml:"<span> Close </span>",
