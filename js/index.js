@@ -133,7 +133,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			closeHtml:"<span> Close </span>",
 			closeStyles: { float: "right",
 							padding: ".25rem 1rem",
-							marginTop: ".5rem" },
+							marginTop: ".5rem",
+							backgroundColor: "transparent",
+							border, "1px solid black"  },
 			modalClass: "modal",
 			modalStyles: function( styles){ styles.width = '90%'},
 			modalId: "Princess_modal"
@@ -160,7 +162,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			closeHtml:"<span> Close </span>",
 			closeStyles: {	float: "right",
 							padding: ".25rem 1rem",
-							marginTop: ".5rem" },
+							marginTop: ".5rem",
+							backgroundColor: "transparent",
+							border, "1px solid black"  },
 			modalClass: "modal",
 			modalStyles: function (styles) { styles.width = '90%'},
 			modalId: "WiFinder_modal"
@@ -192,7 +196,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			closeHtml:"<span> Close </span>",
 			closeStyles: {	float: "right",
 							padding: ".25rem 1rem",
-							marginTop: ".5rem" },
+							marginTop: ".5rem",
+							backgroundColor: "transparent",
+							border, "1px solid black" },
 			modalClass: "modal",
 			modalStyles: function (styles) { styles.width = '90%'},
 			modalId: "Blast_modal"
@@ -214,7 +220,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			closeHtml:"<span> Close </span>",
 			closeStyles: {	float: "right",
 							padding: ".25rem 1rem",
-							marginTop: ".5rem" },
+							marginTop: ".5rem",
+							backgroundColor: "transparent",
+							border, "1px solid black"  },
 			modalClass: "modal",
 			modalStyles: function (styles) { styles.width = '90%'},
 			modalId: "WiFinder_modal"
