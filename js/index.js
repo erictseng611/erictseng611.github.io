@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 							border: "1px solid black"  },
 			modalClass: "modal",
 			modalStyles: function (styles) { styles.width = '90%'},
-			modalId: "WiFinder_modal"
+			modalId: "GCT_modal"
 		})
 		.afterClose(function (modal) {modal.destroy();})
 		.show();

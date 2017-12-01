@@ -293,7 +293,7 @@ html, body{
 	transition: opacity .3s;
 }
 
-#Princess_modal, #WiFinder_modal{
+#Princess_modal, #WiFinder_modal, #GCT_modal, #Blast_modal{
 	width: 90%;
 	max-width: 900px;
 }
