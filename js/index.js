@@ -237,6 +237,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
 
+	document.querySelector('#work-card_Music').addEventListener('click', function(){
+		picoModal({
+			content: `	<section>
+							<h1> Music App Redesign </h1>
+							<p> My group and I redesigned certain aspects of music management apps for a class project. We performed user research, interviews, usability testing, competitive analysis to get an idea of what aspects of existing music management apps that we wanted to redesign. Our group used uxpin to create a prototype of our redesign features.</p>
+							<a href="https://medium.com/p/f215ae651a9a/edit"> Read more about it on medium </a>
+							<p> <strong>Skills</strong>: Usability Testing, Information Architecture, Competitive analysis, Wireframing</p>
+							<figure>
+								<a href="https://medium.com/p/f215ae651a9a/edit"><img src="./images/medium.png" alt="Medium photo"></a>
+							</figure>
+						</section>`,
+			closeHtml:"<span> Close </span>",
+			closeStyles: {	float: "right",
+							padding: ".25rem 1rem",
+							marginTop: ".5rem",
+							backgroundColor: "transparent",
+							border: "1px solid black"  },
+			modalClass: "modal",
+			modalStyles: function (styles) { styles.width = '90%'},
+			modalId: "Music_modal"
+		})
+		.afterClose(function (modal) {modal.destroy();})
+		.show();
+	});
+
 
 	function mobileCheck() {
 		var isMobile = false; //initiate as false

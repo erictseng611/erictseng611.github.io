@@ -249,15 +249,9 @@ html, body{
 	margin: .25rem .25rem;
 	min-width: 250px;
 	height: 250px;
+	width: 250px;
 	overflow: hidden;
 	position: relative;
-}
-
-.work-card:nth-child(4){
-	background-color: rgba(0, 0, 0, 1);
-}
-.work-card:nth-child(5){
-	background-color: rgba(20, 20, 100, .1);
 }
 
 .work-card:hover{
@@ -342,8 +336,22 @@ html, body{
     padding-top:100%;
 }*/
 
+#work-card_Blast{
+	background-color: black;
+}
 
+#projectContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
 
+#work-card_Music{
+	background-image: linear-gradient(to right, #00b8df, #0051f6);
+	width: 100%;
+}
 
 /* contact form */
 
