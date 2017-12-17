@@ -114,6 +114,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// Project LightBoxes
 
 
+	//lazy load the images by waiting for dom to load before inserting pictures
+	document.getElementById('logo_princess').src = "./images/princessLogo.png";
+	document.getElementById('logo_blast').src = "./images/blastLogo.png";
+	document.getElementById('logo_GCT').src = "./images/gctLogo.png";
+	document.getElementById('logo_redesign').src = "./images/musicappredesign.png";
+	//document.getElementById('logo_princess').src = "./images/princessLogo.png";
+	document.getElementById('logo_wifinder').src = "./images/WiFinder.png";
+
 
 	document.querySelector('#work-card_Princess').addEventListener('click', function(){
 		picoModal({
