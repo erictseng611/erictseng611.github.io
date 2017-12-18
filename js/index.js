@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	//lazy load the images by waiting for dom to load before inserting pictures
 	document.getElementById('logo_princess').src = "./images/princessLogo.png";
-	document.getElementById('logo_blast').src = "./images/blastLogo.png";
-	document.getElementById('logo_GCT').src = "./images/gctLogo.png";
+	document.getElementById('logo_blast').src = "./images/blastLogo.gif";
+	document.getElementById('logo_GCT').src = "./images/gctLogo.gif";
 	document.getElementById('logo_redesign').src = "./images/musicappredesign.png";
 	//document.getElementById('logo_princess').src = "./images/princessLogo.png";
 	document.getElementById('logo_wifinder').src = "./images/WiFinder.png";
