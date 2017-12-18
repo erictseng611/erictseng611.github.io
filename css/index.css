@@ -486,6 +486,10 @@ img{
 	transition: opacity 0.3s;
 }
 
+img[data-src]{
+	opacity: 0;
+}
+
 
 /* smaller than a tablet */
 @media (max-width: 768px){
@@ -500,7 +504,7 @@ img{
 		margin: 0 auto;
 		background-color: rgba(0,0,0, .3);
 		padding: 1rem;*/
-		margin: 0 6rem 0 0;
+		margin: 0 5rem 0 0;
 	}
 
 	#introduction h1{

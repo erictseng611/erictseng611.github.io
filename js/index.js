@@ -119,12 +119,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 	//lazy load the images by waiting for dom to load before inserting pictures
-	document.getElementById('logo_princess').src = "./images/princessLogo.png";
-	document.getElementById('logo_blast').src = "./images/blastLogo.gif";
-	document.getElementById('logo_GCT').src = "./images/gctLogo.gif";
-	document.getElementById('logo_redesign').src = "./images/musicappredesign.png";
-	//document.getElementById('logo_princess').src = "./images/princessLogo.png";
-	document.getElementById('logo_wifinder').src = "./images/WiFinder.png";
+	[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+	    img.setAttribute('src', img.getAttribute('data-src'));
+	    img.onload = function() {
+	        img.removeAttribute('data-src');
+	    };
+	});
 
 
 	document.querySelector('#work-card_Princess').addEventListener('click', function(){
