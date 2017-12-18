@@ -15,7 +15,8 @@ html, body{
 	min-height: 100vh;
 	position: relative;
 	width: 100%;
-	background-image: url("../images/IMG_9254.jpg");
+	background-color: grey;
+	/*background-image: url("../images/IMG_9254.jpg");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -478,6 +479,11 @@ input[type='text']{
 
 .hidden{
 	visibility: hidden;
+}
+
+img{
+	opacity: 1;
+	transition: opacity 0.3s;
 }
 
 

@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		return section.offsetTop;
 	});
 
+	//lazy load first bg div
+	//document.getElementById('intro_section').style.backgroundColor = "blue";
+	document.getElementById('intro_section').style.backgroundImage = 'url("./images/IMG_9254.jpg")';
+
 	function Navbar(elementId) {
 
 		this.init = function() {
@@ -43,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			//the navbar offsetTop gets set to 0. In the case where user resizes the screen,
 			//and this is happening. Then set the offsetTop to the bottom of the intro section
 			if (this.navbar.offsetTop == 0) {
-				console.log(sections[0]);
+				//console.log(sections[0]);
 				this.topOfNav = sections[0].offsetHeight - navbar.offsetHeight;
 			} else {
 				this.topOfNav = this.navbar.offsetTop;
