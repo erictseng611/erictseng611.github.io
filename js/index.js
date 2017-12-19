@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
 	//lazy load first bg div
-	//document.getElementById('intro_section').style.backgroundColor = "blue";
-	document.getElementById('intro_section').style.backgroundImage = 'url("./images/IMG_9254.jpg")';
+	document.getElementById('intro_section').classList.add('background_lazy');
 
 	function Navbar(elementId) {
 

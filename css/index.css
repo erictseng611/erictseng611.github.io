@@ -16,12 +16,15 @@ html, body{
 	position: relative;
 	width: 100%;
 	background-color: grey;
-	/*background-image: url("../images/IMG_9254.jpg");*/
+	display: flex;
+	align-items: center;
+}
+
+.background_lazy{
+	background-image: url("../images/IMG_9254.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	display: flex;
-	align-items: center;
 }
 
 #introduction{
