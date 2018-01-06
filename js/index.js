@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					const element = sections[index + 1];
 
 					//scroll to section of each corresponding navlink
-					scrollIt(element, 600, 'linear', null);
+					smoothScroll(element, 600);
 
 				});
 			});
@@ -66,8 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			//create new array of the offsetTop's of the various sections and turn into array
 			//so that we can use the map over function
 
-			// create temporary array so that we can still access ('this' keyword gets destroyed in scope)
-			var tempNavLinks = this.navlinks;
+			var tempNavLinks = [].slice.call(this.navlinks);
 			sectionsOffTop.forEach(function(sectionOffset, index) {
 				if (window.scrollY >= sectionOffset + sections[0].offsetHeight / 2) {
 					tempNavLinks.forEach(navlink => {
@@ -278,8 +277,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		picoModal({
 			content: `	<section>
 							<h1> Team Snap </h1>
-							<p> Team Snap is a progressive web application for soccer team management that I created in my web client languages class. The PWA employs service workers to support RAIL-like response/speed and native app-like offline functionality. The app supports CRUD functions for a soccer team's schedule and roster. In addition, there it supports a live event function, allowing users to keep report and see game events happening live. </p>
+							<p> Team Snap is a progressive web application for soccer team management that I created in my web client languages class. The PWA employs service workers to support RAIL-like response/speed and native app-like offline functionality. The app supports CRUD functions for a soccer team's schedule and roster. In addition, it supports a live event function, allowing users to keep report and see game events happening live. </p>
 							<p> <strong>Skills</strong>: HTML5, CSS3, vanilla Javascript, firebase, service workers</p>
+							<a href="https://github.com/erictseng611/cse134b/tree/master/team%20page/public/hw5"> Check out the code on github. </a>
 							<figure>
 								<a href="https://cse-134b-hw2-702d4.firebaseapp.com/hw5/index.html" alt="Team Snap"><img src="./images/teamSnipHome.gif" alt="Team Snap photo"></a>
 							</figure>
@@ -306,55 +306,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		return isMobile;
 	};
 
-	function scrollIt(destination, duration = 200, easing = 'linear', callback) {
-		const easings = {
-			linear(t) {
-				return t;
-			},
-			easeInQuad(t) {
-				return t * t;
-			},
-			easeOutQuad(t) {
-				return t * (2 - t);
-			},
-			easeInOutQuad(t) {
-				return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-			},
-		};
-
-		const start = window.pageYOffset;
-		const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
-
-		const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-		const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop - navbar.offsetHeight;
-		const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
-
-		if ('requestAnimationFrame' in window === false) {
-			window.scroll(0, destinationOffsetToScroll);
-			if (callback) {
-				callback();
-			}
-			return;
-		}
-
-		function scroll() {
-			const now = 'now' in window.performance ? performance.now() : new Date().getTime();
-			const time = Math.min(1, ((now - startTime) / duration));
-			const timeFunction = easings[easing](time);
-			window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
-
-			if (Math.ceil(window.pageYOffset) === destinationOffsetToScroll) {
-				if (callback) {
-					callback();
-				}
-				return;
-			}
-			requestAnimationFrame(scroll);
-		}
-
-		scroll();
-	};
 
 	var getSiblings = function(elem) {
 		var siblings = [];
